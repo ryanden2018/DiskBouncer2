@@ -19,8 +19,12 @@ window.onload = function() {
       context.arc(Math.floor(db.disks[i].centerX),Math.floor(db.disks[i].centerY),
         Math.floor(db.disks[i].radius),
         0,2*Math.PI,false);
-      context.fillStyle = "black";
-      context.fill();
+      if(i % 10 === 0) {
+        context.fill();
+      } else {
+        context.lineWidth = 2;
+        context.stroke();
+      }
     }
   }
   
