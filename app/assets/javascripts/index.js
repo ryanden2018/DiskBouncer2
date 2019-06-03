@@ -6,7 +6,7 @@ window.onload = function() {
 
   document.body.addEventListener("click",
   function(e) {
-    db = new DiskBouncer(10,100,1.0/600,canvas.width);
+    db = new DiskBouncer(10,100,1.0/6000,canvas.width);
   });
 
 
