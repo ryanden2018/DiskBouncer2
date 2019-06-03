@@ -30,7 +30,7 @@ Sprng.prototype.forceX = function() {
   return nx * this.forceScalar();
 };
 
-Spring.prototype.forceY = function() {
+Sprng.prototype.forceY = function() {
   var x1 = this.disk1.centerX;
   var x2 = this.disk2.centerX;
   var y1 = this.disk1.centerY;
