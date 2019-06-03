@@ -15,6 +15,7 @@ window.onload = function() {
     for(var i = 0; i < 100; i++) {
       db.update();
     }
+
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     for(var i=0; i<db.springs.length; i++) {
