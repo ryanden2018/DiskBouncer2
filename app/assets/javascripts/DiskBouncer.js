@@ -1,4 +1,4 @@
-function Spring(disk1,disk2) {
+function Sprng(disk1,disk2) {
   this.disk1 = disk1;
   this.disk2 = disk2;
   var x1 = this.disk1.centerX;
@@ -8,7 +8,7 @@ function Spring(disk1,disk2) {
   this.restingLength = Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
 }
 
-Spring.prototype.forceScalar = function() {
+Sprng.prototype.forceScalar = function() {
   var x1 = this.disk1.centerX;
   var x2 = this.disk2.centerX;
   var y1 = this.disk1.centerY;
@@ -17,7 +17,7 @@ Spring.prototype.forceScalar = function() {
   return 100000*(-1)*(this.restingLength-dist);
 };
 
-Spring.prototype.forceX = function() {
+Sprng.prototype.forceX = function() {
   var x1 = this.disk1.centerX;
   var x2 = this.disk2.centerX;
   var y1 = this.disk1.centerY;
@@ -86,7 +86,7 @@ function DiskBouncer(diskRadius,N,dt,width) {
       }
     }
 
-    this.springs.push(new Spring( this.disks[this.disks.length-1],this.disks[this.disks.length-2] ));
+    this.springs.push(new Sprng( this.disks[this.disks.length-1],this.disks[this.disks.length-2] ));
   }
 }
 
