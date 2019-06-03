@@ -63,7 +63,7 @@ function DiskBouncer(diskRadius,N,dt,width) {
     var b = 0.25*width+0.5*width*Math.random();
 
     this.disks.push(new Disk(a,b,this.diskRadius));
-    this.disks.push(new Disk(a+Math.cos(theta)*3*diskRadius,b+Math.sin(theta)*3*diskRadius,this.diskRadius));
+    this.disks.push(new Disk(a+Math.cos(theta)*2.5*diskRadius,b+Math.sin(theta)*2.5*diskRadius,this.diskRadius));
 
 
     while(true) {
@@ -80,7 +80,7 @@ function DiskBouncer(diskRadius,N,dt,width) {
         var ap = 0.25*width+0.5*width*Math.random();
         var bp = 0.25*width+0.5*width*Math.random();
         this.disks[this.disks.length-2] = new Disk(ap,bp,this.diskRadius);
-        this.disks[this.disks.length-1] = new Disk(ap+Math.cos(theta)*3*diskRadius,bp+Math.sin(theta)*3*diskRadius,this.diskRadius);
+        this.disks[this.disks.length-1] = new Disk(ap+Math.cos(theta)*2.5*diskRadius,bp+Math.sin(theta)*2.5*diskRadius,this.diskRadius);
       } else {
         break;
       }
