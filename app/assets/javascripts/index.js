@@ -2,11 +2,11 @@ window.onload = function() {
 
   var canvas = document.querySelector("#db");
   var context = canvas.getContext("2d");
-  var db = new DiskBouncer(10,100,1.0/6000,canvas.width);
+  var db = new DiskBouncer(10,140,1.0/6000,canvas.width);
 
   document.body.addEventListener("click",
   function(e) {
-    db = new DiskBouncer(10,100,1.0/6000,canvas.width);
+    db = new DiskBouncer(10,140,1.0/6000,canvas.width);
   });
 
 
