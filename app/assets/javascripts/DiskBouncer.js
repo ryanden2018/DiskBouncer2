@@ -14,7 +14,7 @@ Spring.prototype.forceScalar = function() {
   var y1 = this.disk1.centerY;
   var y2 = this.disk2.centerY;
   var dist = Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
-  return 1000*(-1)*(this.restingLength-dist);
+  return 100000*(-1)*(this.restingLength-dist);
 };
 
 Spring.prototype.forceX = function() {
